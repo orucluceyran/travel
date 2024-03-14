@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul a {
+    margin: 0;
+    padding-right: 20px;
+
+
+}
+
+li {
+    display: inline;
+    color: rgb(224, 203, 171);
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #00095E;
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 0;
+    height: 1.5px;
+    background: #7EA0FF;
+    transition: 0.5s;
+
+}
+
+li a:hover::before {
+    width: 3%;
+    color: #7EA0FF;
+}
+
+.logo img {
+    padding-left: 20px;
+    width: 150px;
+}
+
+.header-btn {
+    width: 180px;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    background: #FFC800;
+    margin-right: 15px;
+
+}
+.josefin-sans {
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #00095E;
+    position: relative;
+
+}
+
+
+.josefin-sans1 {
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #00095E;
+    position: relative;
+    height: 11px;  
+    background: #FFC800;
+    
+    /* width: 100%; */
+    /* top: 58%; */
+    text-align: center;
+    /* font-size: 50px; */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #00095E;
+
+}
+.josefin-sans2 {
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #00095E;
+    position: relative;
+    margin-top: 50px;
+}
+
+.main1{
+    width: 100%;
+    height: 50vh;
+}
+
+
+.main {
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/h1_hero1.png.webp);
+    top: 100px;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explore{
+    background-color: #00095E;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 70px;
+    margin-top:70px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+
+.explore a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.explore::before{
+    content: "";
+    background-color: #FFC800;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 70px;
+    margin-top:70px;
+    position: absolute;
+    right: 0%;
+    bottom: 100%;
+    z-index: -1;
+    
+    transition: 0.5s;
+}
+
+.explore:hover::before{
+    bottom:0%;
+    transition-timing-function: cubic-bezier(0,1.4,1,.59);
+}
+
+.car img {
+    width: 600px;
+    margin-left: 30%;
+    padding-top: 450px;
+    bottom: 26%;
+    right: -9%;
+    display:flex ;
+    justify-content: flex-end;
+    align-items: flex-end;
+    animation: nudge 10s linear infinite alternate;
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100px, 0);
+    }
+    80% {
+        transform: translate(100px, 0);
+    }
+}
+
+
